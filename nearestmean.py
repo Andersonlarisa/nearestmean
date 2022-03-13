@@ -5,8 +5,7 @@
 
 from sklearn.base import BaseEstimator, ClassifierMixin
 import numpy as np
-import scipy.spatial
-from collections import Counter
+
 
 class nmc(BaseEstimator, ClassifierMixin):
     def __init__(self, k=1):
