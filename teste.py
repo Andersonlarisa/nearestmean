@@ -12,8 +12,9 @@ import streamlit as st
 
 st.title('Exemplo Nearest Mean')
 
-qtd_Amostras=st.sidebar.number_input('qtd Amostras',value=100,min_value=2)
-qtd_Classes=st.sidebar.number_input('qtd Classes',value=3,min_value=2)
+st.sidebar.write('Parâmetros do Dataset')
+qtd_Amostras=st.sidebar.number_input('Qtd Amostras',value=100,min_value=2)
+qtd_Classes=st.sidebar.number_input('Qtd Classes',value=3,min_value=2)
 desvio=st.sidebar.number_input('Desvio Padrão',value=0.4,min_value=0.0)
 random_state=st.sidebar.number_input('Random State',value=0,min_value=0)
 
@@ -25,6 +26,7 @@ x, y = make_blobs(n_samples=qtd_Amostras, centers=qtd_Classes, n_features=2,clus
 clf=nmc()
 clf.fit(x,y)
 
+st.sidebar.write('Amostra para classificação')
 x1=st.sidebar.number_input('Amostra eixo x',value=1)
 y1=st.sidebar.number_input('Amostra eixo y',value=1)
 x_test=np.array([x1,y1],ndmin=2)
