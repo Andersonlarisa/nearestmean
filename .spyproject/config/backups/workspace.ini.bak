@@ -4,7 +4,7 @@ save_data_on_exit = True
 save_history = True
 save_non_project_files = False
 project_type = 'empty-project-type'
-recent_files = ['exemplo.py', 'nearestmeanclassifier.py', 'teste.py', 'nearestmean.py']
+recent_files = ['nearestmean.py', 'teste_proba.py', '..\\..\\anaconda3\\lib\\site-packages\\sklearn\\neighbors\\_classification.py']
 
 [main]
 version = 0.2.0
