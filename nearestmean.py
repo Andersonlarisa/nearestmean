@@ -64,7 +64,8 @@ class nmc(BaseEstimator, ClassifierMixin):
         normalizador=peso.sum(axis=1)[:, np.newaxis]
         normalizador[normalizador == 0.0] = 1.0
         peso /= normalizador
-        probabilidades.append(peso)
+        #probabilidades.append(peso)
+        probabilidades=peso
         
         return probabilidades
     
